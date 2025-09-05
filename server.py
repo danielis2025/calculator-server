@@ -19,7 +19,7 @@ def subtract(a: int, b: int) -> int:
 # Add a multiplication tool
 @mcp.tool()
 def multiply(a: int, b: int) -> int:
-    """Multiply a and b"""
+    """Multiply a by b"""
     return a * b
 
 # Add a division tool
