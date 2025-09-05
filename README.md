@@ -8,3 +8,6 @@ I used **inspector** start up the server and lets you interact with it so you ca
 ### Steps
 1. Click **Connect**. This should connect to the server.
 2. Select **Tools** and **listTools**, you should see **Add** show up, select **Add** and fill in the parameter values.
+
+## How to use the Client
+- Run the Client using `python client.py`
