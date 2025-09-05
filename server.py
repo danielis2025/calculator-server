@@ -10,6 +10,23 @@ def add(a: int, b: int) -> int:
     """Add two numbers"""
     return a + b
 
+# Add a subtraction tool
+@mcp.tool()
+def subtract(a: int, b: int) -> int:
+    """Subtract "b" from "a" """
+    return -(b - a)
+
+# Add a multiplication tool
+@mcp.tool()
+def multiply(a: int, b: int) -> int:
+    """Multiply a and b"""
+    return a * b
+
+# Add a division tool
+@mcp.tool()
+def divide(a: int, b: int) -> int:
+    """Divide a by b """
+    return (a / b) if b != 0 else float('inf')
 
 # Add a dynamic greeting resource
 @mcp.resource("greeting://{name}")
