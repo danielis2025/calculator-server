@@ -28,6 +28,12 @@ def divide(a: int, b: int) -> int:
     """Divide a by b """
     return (a / b) if b != 0 else float('inf')
 
+# Add a greeting tool
+@mcp.tool()
+def greet(name: str) -> str:
+    """Return personalized greeting"""
+    return f"Hello, {name}!"
+
 
 # Add a dynamic greeting resource
 @mcp.resource("greeting://{name}")
