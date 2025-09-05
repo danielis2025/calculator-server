@@ -7,7 +7,7 @@ mcp = FastMCP("Demo")
 # Add an addition tool
 @mcp.tool()
 def add(a: int, b: int) -> int:
-    """Add two numbers"""
+    """Add a and b"""
     return a + b
 
 # Add a subtraction tool
@@ -28,11 +28,14 @@ def divide(a: int, b: int) -> int:
     """Divide a by b """
     return (a / b) if b != 0 else float('inf')
 
+
 # Add a dynamic greeting resource
 @mcp.resource("greeting://{name}")
 def get_greeting(name: str) -> str:
     """Get a personalized greeting"""
     return f"Hello, {name}!"
+
+
 # Start the server
 if __name__ == "__main__":
     mcp.run()
